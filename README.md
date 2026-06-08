@@ -8,8 +8,8 @@
 
 ## 📸 Скриншот
 
-<!-- Вставьте скриншот приложения -->
-<!-- ![Скриншот](screenshot.png) -->
+<img width="1011" height="1221" alt="image copy" src="https://github.com/user-attachments/assets/7976fac9-21da-435f-8378-8b3c5bfc9703" />
+
 
 ## ✨ Возможности
 
@@ -33,7 +33,8 @@
 
 ```
 expense-tracker/
-├── index.html      # Главная страница
+├── index.html      # Главная страница![Uploading image copy.png…]()
+
 ├── style.css       # Стили
 ├── script.js       # Логика приложения
 └── README.md       # Документация
