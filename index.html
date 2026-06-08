@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Трекер расходов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Трекер расходов</h1>
+    </header>
+
+    <section class="total-section">
+      <h2>Общая сумма</h2>
+      <p class="total-amount" id="totalAmount">0 ₸</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Добавить трату</h2>
+      <form id="expenseForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="category">Категория</label>
+            <select id="category" required>
+              <option value="">— Выберите категорию —</option>
+              <option value="Еда">🍔 Еда</option>
+              <option value="Транспорт">🚗 Транспорт</option>
+              <option value="Развлечения">🎮 Развлечения</option>
+              <option value="Подписки">📺 Подписки</option>
+              <option value="Здоровье">💊 Здоровье</option>
+              <option value="Одежда">👕 Одежда</option>
+              <option value="Прочее">📦 Прочее</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="amount">Сумма (₸)</label>
+            <input type="number" id="amount" min="0.01" step="0.01" placeholder="0" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Дата</label>
+            <input type="date" id="date" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="description">Описание (необязательно)</label>
+          <input type="text" id="description" placeholder="Например: обед в столовой">
+        </div>
+        <button type="submit" class="btn btn-add">➕ Добавить</button>
+      </form>
+    </section>
+
+    <section class="categories-section">
+      <h2>Разбивка по категориям</h2>
+      <div id="categoriesBreakdown" class="categories-breakdown">
+        <p class="empty-hint">Пока нет расходов</p>
+      </div>
+    </section>
+
+    <section class="expenses-section">
+      <h2>Все траты</h2>
+      <div id="expensesList" class="expenses-list">
+        <p class="empty-hint" id="emptyHint">Добавьте первую трату ✨</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
